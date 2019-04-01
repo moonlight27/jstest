@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Page Title</title>
+<script type="text/javascript">
+  function timer () {
+    this.second = 10000;
+  } 
+  function btn () {
+    this.second = 10000;
+  }
+  var obj = new btn();
+  var myval = setInterval(reload,obj.second);
+  function btnStart() {
+    return myval;
+  }
+  function btnStop() {
+    return clearInterval(myval);
+  }
+  function reload (){
+   location.reload();
+  }
+  var time = new Date();
+  document.write(time);  
+</script>
+</head>
+<body>
+  <button onclick="btnStart();">START</button>
+  <button onclick="btnStop();">STOP</button>   
+</body>
+</html>

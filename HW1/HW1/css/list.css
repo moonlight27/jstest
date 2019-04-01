@@ -1,0 +1,51 @@
+.container{ /*容器*/
+ display:flex;
+ flex-direction:column;
+ width:700px;
+} 
+.top{ /*標題點餐div*/
+ flex: initial;
+ padding-bottom:8px; 
+}
+.middle{/*中間顯示div*/
+ flex:2;
+ height: 170px;
+ overflow:auto;
+ background-color:#e9e9e9;    
+}
+.bottom{ /*底部新增div*/
+ padding-top:16px;
+ flex:1; 
+}
+.btn{ /*按鈕*/
+ background-color: #db4d3e;
+ border-radius:4px;
+ font-size:20px;
+ color: #fff;
+}
+.columnData{ /*欄位資料排版*/
+  width:60%;
+}
+.columnTime{ /*欄位資料時間排版*/
+  width: 30%;
+  text-align:center;
+}
+.columnDelete{ /*欄位資料刪除排版*/
+  width:10%; 
+  text-align:right;
+}
+.columnData,.columnDelete,.columnTime{
+  background-color:#fff;
+}
+.Delete{ /*刪除按鈕*/
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 20px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+  background-color:#db4d3e; 
+  
+}
+

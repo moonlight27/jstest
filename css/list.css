@@ -1,0 +1,50 @@
+.container{
+ display:flex;
+ flex-direction:column;
+ width:700px;
+} 
+.top{
+ flex: initial;
+ padding-bottom:8px; 
+}
+.middle{
+ flex:2;
+ height: 170px;
+ overflow:auto;
+ background-color:#e9e9e9;    
+}
+.bottom{
+ padding-top:16px;
+ flex:1; 
+}
+.btn{
+ background-color: #db4d3e;
+ border-radius:4px;
+ font-size:20px;
+ color: #fff;
+}
+.columnData{
+  width:60%;
+}
+.columnTime{
+  width: 30%;
+  text-align:center;
+}
+.columnDelete{
+  width:10%; 
+  text-align:right;
+}
+.columnData,.columnDelete,.columnTime{
+  background-color:#fff;
+}
+.Delete{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+  background-color:#db4d3e; 
+}
+

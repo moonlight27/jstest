@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Page Title</title>
+<script type="text/javascript">
+  var time = new Date();
+  document.write(time);
+  class timer{
+    constructor(second){
+      this.second = second;
+    }
+  }
+  timer.prototype.start = function () {
+    setTimeout(location.reload(),this.second);
+  }
+  class btn extends timer {
+    constructor(second){
+     super(second);
+    }  
+  }
+  btn.prototype.control = function control (e) {
+    if (e === 1){
+      btn.prototype.start();
+    }
+    else if(e === 2){
+     // clearInterval();
+    }
+  }
+  function btnClick (e) {
+    var obj = new btn(3000);
+    obj.control(e);
+  }
+  /*自動更新的程式好像無法有效執行*/
+</script>
+</head>
+<body> 
+  <button onclick="btnClick(1);">START</button>
+  <button onclick="btnClick(2);">STOP</button>
+</body>
+</html>
